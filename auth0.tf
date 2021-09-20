@@ -43,7 +43,8 @@ resource "auth0_client" "dreamkast" {
   grant_types = [ "authorization_code", "implicit", "refresh_token", "client_credentials" ]
   allowed_logout_urls = [ "http://localhost:3000/",
                           "http://localhost:8080/",
-                          "http://10.9.8.171:3000/" ]
+                          "http://10.9.8.171:3000/",
+                          "https://10.9.8.171:3000/" ]
   sso = false
   sso_disabled = false
   web_origins = []
